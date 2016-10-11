@@ -1,0 +1,197 @@
+body {
+
+
+}
+
+.subsection {
+  width: 100%; 
+  display: inline;
+}
+
+.subsection-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  color: #414042;
+  text-transform: uppercase;
+  width: 100%; 
+  padding-top: 10px;
+}
+
+.container {
+  padding: 0px 15px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.svg-outer-container{
+	width:100%;
+}
+
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.fruit-title{
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #414042;
+  text-transform: lowercase;
+}
+#oval {
+  width: 200px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+}
+
+.fruit{
+  width: 50%;
+  display:inline-block;
+}
+
+a.svg:after {
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+}
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+
+#comingSoon {
+  display: none;
+}
+/* Cleaner, but slightly less support: use "50%" as value */
+
+.animatedBounce{ 
+  -webkit-animation-duration: 5s; 
+  animation-duration: 5s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both; 
+  -webkit-animation-timing-function: ease-in-out; 
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count:infinite; 
+  -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes bounce { 
+  0%, 100% {-webkit-transform: translateY(0);} 
+  50% {-webkit-transform: translateY(-30px);} 
+} 
+
+@keyframes bounce { 
+  0%, 100% {transform: translateY(0);} 
+  50% {transform: translateY(-30px);} 
+} 
+
+.bounce { 
+  -webkit-animation-name: bounce; 
+  animation-name: bounce; 
+}
+
+.animatedPulse { 
+  -webkit-animation-duration: 5s; 
+  animation-duration: 5s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both; 
+  -webkit-animation-timing-function: ease-in-out; 
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count:infinite; 
+  -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes pulse { 
+  0% { -webkit-transform: scale(.9); opacity: 0.9} 
+  50% { -webkit-transform: scale(.6); opacity: 0.2} 
+  100% { -webkit-transform: scale(.9); opacity: 0.9} 
+} 
+@keyframes pulse { 
+  0% { transform: scale(.9); opacity: 0.9} 
+  50% { transform: scale(.6); opacity: 0.2} 
+  100% { transform: scale(.9); opacity: 0.9} 
+} 
+.pulse { 
+  -webkit-animation-name: pulse; 
+  animation-name: pulse; 
+}
+
+#SWlogo {
+/*  -webkit-animation: logoBounce 2s ease-in-out; 
+  animation: logoBounce 2s ease-in-out;
+      -webkit-animation-delay: 2s; 
+      animation-delay: 2s;*/
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes logoBounce {
+      0%   {right:0px; top:-5vw;}
+      100% {right:0px; top:0px;}
+    }
+
+    /* Standard syntax */
+    @keyframes logoBounce {
+      0%   {right:0px; top:0px;}
+      50%  {right:0px; top:-.1vw;}
+      100% {right:0px; top:0px;}
+    }
+
+    .svgDefinitions {
+      height: 0;
+    }
+
+    #SWlogo {
+      top: 0px;
+    }
+
+    #top-logo{
+      margin-top: .5em;
+    }
+
+    @media(max-width:666px){
+      .fruit{
+        width: 100%;
+      }
+      #top-logo{
+        width: 60%;
+      }
+    }
+    @media(min-width:667px){
+      #top-logo{
+        width: 40%;
+      }
+    }
+    @media(min-width:768px){
+      #top-logo{
+        width: 30%;
+      }
+      .fruit{
+        width: 33%;
+      }
+      .container {
+        width: 750px;
+      }
+    }
+    @media(min-width:992px){
+      .fruit{
+        width: 20%;
+      }
+      .container {
+        width: 970px;
+      }
+    }
+    @media(min-width:1200px){
+      .container {
+        width: 1170px;
+      }
+    }

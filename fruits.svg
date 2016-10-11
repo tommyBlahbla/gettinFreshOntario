@@ -1,0 +1,12 @@
+              <svg xmlns="http://www.w3.org/2000/svg" width="219.5" height="218" viewBox="0 0 219.5 218" id="apricote">
+                <path fill="#B16B57" d="M211 105.7c0 61-45.3 110.3-101.2 110.3-56 0-101.3-49.4-101.3-110.3 0-61 45.3-88.2 101.3-88.2S211 44.7 211 105.7z"/>
+                <path fill="#8C1C1B" d="M185.5 94.5c1.8 18.5 0 110-75.7 121.5-55.3 8.4-119-52-101.3-110.3C44.2-13.3 108.7 31 108.7 31c48.5-13.4 73.3 28.6 76.8 63.5z"/>
+                <path fill="none" stroke="#711011" stroke-width="12.6" stroke-miterlimit="10" d="M211 105.7c0 61-45.3 105.8-101.2 105.8-56 0-101.3-45-101.3-105.8 0-61 45.3-81.6 101.3-81.6S211 45 211 106z"/>
+                <path fill="none" stroke="#38140D" stroke-width="12.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M111.5 33.5l8-26"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="219.5" height="218" viewBox="0 0 219.5 218" id="apple">
+                <path fill="#B16B57" d="M211 105.7c0 61-45.3 110.3-101.2 110.3-56 0-101.3-49.4-101.3-110.3 0-61 45.3-88.2 101.3-88.2S211 44.7 211 105.7z"/>
+                <path fill="#000000" d="M185.5 94.5c1.8 18.5 0 110-75.7 121.5-55.3 8.4-119-52-101.3-110.3C44.2-13.3 108.7 31 108.7 31c48.5-13.4 73.3 28.6 76.8 63.5z"/>
+                <path fill="none" stroke="#711011" stroke-width="12.6" stroke-miterlimit="10" d="M211 105.7c0 61-45.3 105.8-101.2 105.8-56 0-101.3-45-101.3-105.8 0-61 45.3-81.6 101.3-81.6S211 45 211 106z"/>
+                <path fill="none" stroke="#38140D" stroke-width="12.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M111.5 33.5l8-26"/>
+              </svg>
