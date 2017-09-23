@@ -28,11 +28,21 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
-<style>
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Pacifico');
-</style>
-<link rel="stylesheet" href="animate.css">
-<link rel="stylesheet" href="stylemini.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Pacifico');
+  </style>
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="stylemini.css">
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106939382-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106939382-2');
+  </script>
+
 
   <title>gettin' fresh in Ontario</title>
 </head>
@@ -40,7 +50,7 @@
 <body>
   <div class="container">
    <div class="svg-outer-container">
-    <div class="svg-container wow flipInX animated">
+    <div class="svg-container wow fadeInDown">
       <object type="image/svg+xml" data="top-logo.svg" width="40%" height="100%" class="svg-content" id="top-logo">
       </object>
     </div>   
@@ -49,15 +59,15 @@
 
 <div class="container">
   <div class="subsection" id="fruits">
-    <div class="subsection-title">
-      <span class="wow fadeInDown animated">In Season</span>
+    <div class="subsection-title wow flipInX">
+      <span>In Season</span>
     </div><!-- /#fruits -->
   </div>
 </div>
 
 <div class="container">
   <div class="subsection"  id="comingSoon">
-    <div class="subsection-title">
+    <div class="subsection-title wow flipInX">
       <span>Coming Soon</span>
     </div>
   </div>
@@ -93,4 +103,7 @@ for(i=0;i<obj.fruits.length;i++){if(obj.fruits[i].avail[currentMonth]==1){drawFr
 </script>
 <!-- Custom styles for this template -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> 
+<script>
+new WOW().init();
+</script>
 </body></html>
