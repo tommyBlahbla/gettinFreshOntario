@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="apple-mobile-web-app-title" content="LBBleu">
-<meta name="application-name" content="LBBleu">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-<meta name="theme-color" content="#ffffff">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="LBBleu">
+  <meta name="application-name" content="LBBleu">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Pacifico');
+</style>
 
-<title>gettin' fresh in Ontario</title>
-
-
+  <title>gettin' fresh in Ontario</title>
 </head>
 
 <body>
@@ -61,34 +64,31 @@
 var d=new Date();var currentMonth=(d.getMonth());var fruits='{"fruits": [ {"fruitName": "apples", "fruitUrl": "1", "avail":"111110111111"}, {"fruitName": "apricots", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "blueberries", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "cherries", "fruitUrl": "1", "avail":"000001100000"}, {"fruitName": "cranberries", "fruitUrl": "1", "avail":"000000000100"}, {"fruitName": "currants", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "gooseberries", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "grapes", "fruitUrl": "1", "avail":"000000011000"}, {"fruitName": "muskmelons", "fruitUrl": "0", "avail":"000000011000"}, {"fruitName": "nectarines", "fruitUrl": "1", "avail":"000000011000"}, {"fruitName": "peaches", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "pears", "fruitUrl": "1", "avail":"000000011111"}, {"fruitName": "plums", "fruitUrl": "1", "avail":"000000111100"}, {"fruitName": "raspberries", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "strawberries", "fruitUrl": "1", "avail":"000001100000"}]}';obj=JSON.parse(fruits);var i;function getParameterByName(name,url){if(!url)url=window.location.href;name=name.replace(/[\[\]]/g,"\\$&");var regex=new RegExp("[?&]"+name+"(=([^&#]*)|&|#|$)"),results=regex.exec(url);if(!results)return null;if(!results[2])return '';return decodeURIComponent(results[2].replace(/\+/g," "))}
 var monthParam=getParameterByName('month');if(monthParam&&monthParam<=12){currentMonth=monthParam-1}
 function drawFruit(divId){document.getElementById(divId).innerHTML+='\
-      <div class="fruit" id="'+obj.fruits[i].fruitName+'">\
-      <span class="fruit-title">'+obj.fruits[i].fruitName+'</span>\
-      <div id="animated-apple" class="animatedBounce bounce">\
-      <div class="svg-outer-container">\
-      <div class="svg-container">\
-      <a href="http://www.ontario.ca/foodland/food/'+obj.fruits[i].fruitName+'" class="svg">\
-      <object type="image/svg+xml" data="'+obj.fruits[i].fruitName+'.svg" width="100%" height="100%" class="svg-content" >\
-      </object>\
-      </a>\
-      </div>\
-      </div>\
-      </div>\
-      <div id="animated-shadow" class="animatedPulse pulse">\
-      <div class="svg-outer-container">\
-      <div class="svg-container">\
-      <object type="image/svg+xml" data="shadow.svg" width="40%" height="100%" class="svg-content">\
-      </object>\
-      </div>\
-      </div>\
-      </div>\
-      </div>\
-      '}
+<div class="fruit" id="'+obj.fruits[i].fruitName+'">\
+<span class="fruit-title">'+obj.fruits[i].fruitName+'</span>\
+<div id="animated-apple" class="animatedBounce bounce">\
+<div class="svg-outer-container">\
+<div class="svg-container">\
+<a href="http://www.ontario.ca/foodland/food/'+obj.fruits[i].fruitName+'" class="svg">\
+<object type="image/svg+xml" data="'+obj.fruits[i].fruitName+'.svg" width="100%" height="100%" class="svg-content" >\
+</object>\
+</a>\
+</div>\
+</div>\
+</div>\
+<div id="animated-shadow" class="animatedPulse pulse">\
+<div class="svg-outer-container">\
+<div class="svg-container">\
+<object type="image/svg+xml" data="shadow.svg" width="40%" height="100%" class="svg-content">\
+</object>\
+</div>\
+</div>\
+</div>\
+</div>\
+'}
 for(i=0;i<obj.fruits.length;i++){if(obj.fruits[i].avail[currentMonth]==1){drawFruit("fruits")}
-else if(obj.fruits[i].avail[currentMonth]!=1&&obj.fruits[i].avail[currentMonth+1]==1){drawFruit("comingSoon");document.getElementById("comingSoon").style.display="block"}}
+  else if(obj.fruits[i].avail[currentMonth]!=1&&obj.fruits[i].avail[currentMonth+1]==1){drawFruit("comingSoon");document.getElementById("comingSoon").style.display="block"}}
 </script>
 <!-- Custom styles for this template -->
 <link href="stylemini.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  </body></html>
+</body></html>
