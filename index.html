@@ -38,7 +38,7 @@
 <body>
   <div class="container">
    <div class="svg-outer-container">
-    <div class="svg-container">
+    <div class="svg-container wow flipInX animated">
       <object type="image/svg+xml" data="top-logo.svg" width="40%" height="100%" class="svg-content" id="top-logo">
       </object>
     </div>   
@@ -90,6 +90,7 @@ for(i=0;i<obj.fruits.length;i++){if(obj.fruits[i].avail[currentMonth]==1){drawFr
   else if(obj.fruits[i].avail[currentMonth]!=1&&obj.fruits[i].avail[currentMonth+1]==1){drawFruit("comingSoon");document.getElementById("comingSoon").style.display="block"}}
 </script>
 <!-- Custom styles for this template -->
+<link rel="stylesheet" href="animate.css">
 <link rel="preload" href="stylemini.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="stylemini.css"></noscript>
 <script type="text/javascript">
@@ -218,4 +219,5 @@ for(i=0;i<obj.fruits.length;i++){if(obj.fruits[i].avail[currentMonth]==1){drawFr
   }
 }( this ));
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> 
 </body></html>
