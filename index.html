@@ -58,37 +58,9 @@
   </div>
 </div>
 <script type="text/javascript">
-
-var d = new Date();
-var currentMonth = (d.getMonth());
-
-
-    //currentMonth = 5;
-
-    var fruits = '{"fruits": [ {"fruitName": "apples", "fruitUrl": "1", "avail":"111110111111"}, {"fruitName": "apricots", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "blueberries", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "cherries", "fruitUrl": "1", "avail":"000001100000"}, {"fruitName": "cranberries", "fruitUrl": "1", "avail":"000000000100"}, {"fruitName": "currants", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "gooseberries", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "grapes", "fruitUrl": "1", "avail":"000000011000"}, {"fruitName": "muskmelons", "fruitUrl": "0", "avail":"000000011000"}, {"fruitName": "nectarines", "fruitUrl": "1", "avail":"000000011000"}, {"fruitName": "peaches", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "pears", "fruitUrl": "1", "avail":"000000011111"}, {"fruitName": "plums", "fruitUrl": "1", "avail":"000000111100"}, {"fruitName": "raspberries", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "strawberries", "fruitUrl": "1", "avail":"000001100000"}]}';
-
-    obj = JSON.parse(fruits);
-
-    var i;
-
-    function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, "\\$&");
-      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-      results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
-    var monthParam = getParameterByName('month');
-    if(monthParam && monthParam<=12){
-      currentMonth = monthParam-1;
-    }
-
-
-    function drawFruit(divId){
-      document.getElementById(divId).innerHTML+='\
+var d=new Date();var currentMonth=(d.getMonth());var fruits='{"fruits": [ {"fruitName": "apples", "fruitUrl": "1", "avail":"111110111111"}, {"fruitName": "apricots", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "blueberries", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "cherries", "fruitUrl": "1", "avail":"000001100000"}, {"fruitName": "cranberries", "fruitUrl": "1", "avail":"000000000100"}, {"fruitName": "currants", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "gooseberries", "fruitUrl": "1", "avail":"000000110000"}, {"fruitName": "grapes", "fruitUrl": "1", "avail":"000000011000"}, {"fruitName": "muskmelons", "fruitUrl": "0", "avail":"000000011000"}, {"fruitName": "nectarines", "fruitUrl": "1", "avail":"000000011000"}, {"fruitName": "peaches", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "pears", "fruitUrl": "1", "avail":"000000011111"}, {"fruitName": "plums", "fruitUrl": "1", "avail":"000000111100"}, {"fruitName": "raspberries", "fruitUrl": "1", "avail":"000000111000"}, {"fruitName": "strawberries", "fruitUrl": "1", "avail":"000001100000"}]}';obj=JSON.parse(fruits);var i;function getParameterByName(name,url){if(!url)url=window.location.href;name=name.replace(/[\[\]]/g,"\\$&");var regex=new RegExp("[?&]"+name+"(=([^&#]*)|&|#|$)"),results=regex.exec(url);if(!results)return null;if(!results[2])return '';return decodeURIComponent(results[2].replace(/\+/g," "))}
+var monthParam=getParameterByName('month');if(monthParam&&monthParam<=12){currentMonth=monthParam-1}
+function drawFruit(divId){document.getElementById(divId).innerHTML+='\
       <div class="fruit" id="'+obj.fruits[i].fruitName+'">\
       <span class="fruit-title">'+obj.fruits[i].fruitName+'</span>\
       <div id="animated-apple" class="animatedBounce bounce">\
@@ -110,20 +82,9 @@ var currentMonth = (d.getMonth());
       </div>\
       </div>\
       </div>\
-      ';
-
-    }
-
-    for(i = 0; i < obj.fruits.length; i++) {
-      if(obj.fruits[i].avail[currentMonth]==1){
-        drawFruit("fruits");
-      }
-
-      else if(obj.fruits[i].avail[currentMonth]!=1 && obj.fruits[i].avail[currentMonth+1]==1){
-        drawFruit("comingSoon");
-        document.getElementById("comingSoon").style.display = "block";
-      }
-    }
+      '}
+for(i=0;i<obj.fruits.length;i++){if(obj.fruits[i].avail[currentMonth]==1){drawFruit("fruits")}
+else if(obj.fruits[i].avail[currentMonth]!=1&&obj.fruits[i].avail[currentMonth+1]==1){drawFruit("comingSoon");document.getElementById("comingSoon").style.display="block"}}
 </script>
 <!-- Custom styles for this template -->
 <link href="stylemini.css" rel="stylesheet">
